@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title><?php if (!empty($titre)) echo $titre . " | Mini-journal"; ?></title>
+    <meta name="author" content="Baptiste Vannesson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="ui/css/style.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascript/validForm/validForm.js"></script>
+    <script src="javascript/geolocalisation/geoloc.js"></script>
+    <script src="javascript/imagesFlickr/ajaxQuery.js"></script>
+    <script src="javascript/tinymce/tinymce.min.js"></script>
+    <script src="javascript/tinymce/langs/fr_FR.js"></script>
+    <script src="javascript/tinymce/config/init.js"></script>
+    <script>
+        function confirmerSuppression() {
+            return confirm("Voulez-vous vraiment supprimer ceci ?");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Mini-journal <sup>Responsive</sup></h1>
+        <?php echo $authInfos; ?>
+    </header>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="index.php?t=article&amp;a=voirListe">Liste des articles</a></li>
+                <li><a href="index.php?t=article&amp;a=ajouter">Ajouter un article</a></li>
+                <li><a href="index.php?t=syndication&amp;a=rss">Flux RSS</a></li>
+                <li><a href="index.php?t=syndication&amp;a=atom">Flux Atom</a></li>
+                <li><a href="index.php?t=events&amp;a=afficher" onclick="getLocation(); return false">Événements</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <?php echo $contenu; ?>
+        </div>
+    </div>
+    <footer>
+        <p>Baptiste Vannesson &copy; 2015 - M1 DNR2I - Université de Caen Basse-Normandie</p>
+    </footer>
+</body>
+
+</html>

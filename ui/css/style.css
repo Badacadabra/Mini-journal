@@ -1,0 +1,729 @@
+/* ============================== */
+/* =========== Reset =========== */
+/* ============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: candelabook, sans-serif;
+    outline: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* ============================== */
+/* ========== Police =========== */
+/* ============================ */
+
+@font-face {
+    font-family: 'helsinkiregular';
+    src: url('../polices/webfontkit-20150423-154423/helsinki-webfont.eot');
+    src: url('../polices/webfontkit-20150423-154423/helsinki-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/webfontkit-20150423-154423/helsinki-webfont.woff2') format('woff2'),
+         url('../polices/webfontkit-20150423-154423/helsinki-webfont.woff') format('woff'),
+         url('../polices/webfontkit-20150423-154423/helsinki-webfont.ttf') format('truetype'),
+         url('../polices/webfontkit-20150423-154423/helsinki-webfont.svg#helsinkiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'komika_textregular';
+    src: url('../polices/webfontkit-20150424-121830/komtxt__-webfont.eot');
+    src: url('../polices/webfontkit-20150424-121830/komtxt__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/webfontkit-20150424-121830/komtxt__-webfont.woff2') format('woff2'),
+         url('../polices/webfontkit-20150424-121830/komtxt__-webfont.woff') format('woff'),
+         url('../polices/webfontkit-20150424-121830/komtxt__-webfont.ttf') format('truetype'),
+         url('../polices/webfontkit-20150424-121830/komtxt__-webfont.svg#komika_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dancing_script_otregular';
+    src: url('../polices/webfontkit-20150429-141035/dancingscript-regular-webfont.eot');
+    src: url('../polices/webfontkit-20150429-141035/dancingscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/webfontkit-20150429-141035/dancingscript-regular-webfont.woff2') format('woff2'),
+         url('../polices/webfontkit-20150429-141035/dancingscript-regular-webfont.woff') format('woff'),
+         url('../polices/webfontkit-20150429-141035/dancingscript-regular-webfont.ttf') format('truetype'),
+         url('../polices/webfontkit-20150429-141035/dancingscript-regular-webfont.svg#dancing_script_otregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'candelabook';
+    src: url('../polices/webfontkit-20150429-143411/candelabook-webfont.eot');
+    src: url('../polices/webfontkit-20150429-143411/candelabook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/webfontkit-20150429-143411/candelabook-webfont.woff2') format('woff2'),
+         url('../polices/webfontkit-20150429-143411/candelabook-webfont.woff') format('woff'),
+         url('../polices/webfontkit-20150429-143411/candelabook-webfont.ttf') format('truetype'),
+         url('../polices/webfontkit-20150429-143411/candelabook-webfont.svg#candelabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ============================== */
+/* ========== Header =========== */
+/* ============================ */
+
+header h1 {
+    background-color: #C10037;
+    color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-family: 'helsinkiregular', sans-serif;
+    text-align: center;
+}
+
+header h1 sup {
+    font-family: dancing_script_otregular, sans-serif;
+}
+
+/* ============================== */
+/* ======== Navigation ========= */
+/* ============================ */
+
+nav {
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: gray;
+    font-family: 'helsinkiregular', sans-serif;
+    font-size: 15px;
+    margin: 0 18px;
+    padding: 5px;
+    background-color: #F2F2F2;
+    position: relative;
+    bottom: 7px;
+    border-radius: 5px;
+    transition: background-color .5s ease;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* ============================== */
+/* =========== Main ============ */
+/* ============================ */
+
+/* =========== Divers ============ */
+
+h2 {
+    margin: 15px 0;
+    font-family: komika_textregular, sans-serif;
+}
+
+h3 {
+    margin-top: 15px;
+    font-family: komika_textregular, sans-serif;
+    font-variant: small-caps;
+}
+
+hr {
+    border: solid 1px #F2F2F2;
+}
+
+p {
+    margin: 7px 0;
+}
+
+a {
+    color: #202020;
+}
+
+figure {
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+    font-size: x-large;
+    color: #C10037;
+}
+
+#wrapper {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border: solid 2px #F2F2F2;
+    border-radius: 5px 5px 0 0;
+}
+
+#main {
+    background-color: white;
+    padding: 10px 30px;
+}
+
+#main ul {
+    list-style-type: circle;
+    margin-left: 30px;
+    font-style: italic;
+}
+
+.titresStyles {
+    font-size: 28px;
+    text-align: center;
+    border-bottom: solid 2px black;
+    padding-bottom: 5px;
+}
+
+/* =========== Zone infos ============ */
+
+div#accueil,
+div#boxMembre {
+    height: 86px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+div#accueil p {
+    font-family: helsinkiregular, sans-serif;
+    line-height: 86px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+}
+
+div#boxMembre {
+    line-height: 25px;
+}
+
+div#boxMembre a {
+    color: gray;
+    font-family: komika_textregular, sans-serif;
+    transition: color .3s ease;
+}
+
+div#boxMembre a:hover {
+    color: orange;
+}
+
+div#boxMembre div#infosConnexion {
+    font-family: helsinkiregular, sans-serif;
+    font-size: 15px;
+}
+
+/* =========== Articles ============ */
+
+.item {
+    margin-top: 25px;
+    padding-left: 15px;
+    border-left: solid 5px #F2F2F2;
+    transition: border-color .5s ease;
+}
+
+.item:first-of-type {
+    margin-top: 15px;
+}
+
+.item:hover {
+    border-color: #C10037;
+}
+
+.item:hover a:first-child {
+    color: #C10037;
+}
+
+.auteurs {
+    margin: 15px 0 15px 0;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.chapos {
+    color: gray;
+    margin: 15px 0 15px 0;
+    padding-left: 15px;
+    font-style: italic;
+    border-left: solid 2px silver;
+}
+
+.contenus {
+    margin-bottom: 15px;
+}
+
+.more {
+    color: gray;
+    background-color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    position: static;
+    padding: 0;
+    border-radius: 0;
+}
+
+.more:hover {
+    color: silver;
+}
+
+.highlightLink {
+    color: #C10037;
+    font-weight: bold;
+}
+
+.highlightLink:hover {
+    color: gray;
+}
+
+/* =========== Syndication & Événements ============ */
+
+.syndication {
+    text-align: center;
+    transition: transform .3s ease;
+}
+
+.syndication,
+.evenements {
+    margin: 12px 0;
+    background-color: #F2F2F2;
+    border-radius: 7px 7px 0 0;
+}
+
+.syndication h3,
+.evenements h3 {
+    margin: 0;
+    font-family: komika_textregular, sans-serif;
+    font-size: 16px;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 7px 7px 0 0;
+}
+
+.syndication h3,
+.evenements h3,
+.syndication .contenu-element-rss,
+.syndication .contenu-element-atom,
+.evenements .contenu-evenements {
+    transition: background-color .3s ease;
+}
+
+.syndication:hover h3,
+.evenements:hover h3 {
+    background-color: #C10037;
+}
+
+.syndication img {
+    height: 180px;
+    background-color: black;
+    border-top: 0;
+    box-shadow: 0 2px 2px black;
+    transition: border-color .3s ease;
+}
+
+.contenu-syndication {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contenu-syndication a {
+    width: 45%;
+}
+
+.evenements {
+    width: 250px;
+    margin: 10px;
+}
+
+.evenements a:hover {
+    text-decoration: underline;
+}
+
+.contenu-evenements {
+    padding: 7px;
+}
+
+#container-evenements {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#wrapper-rss img {
+    border: solid 2px white;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.element-rss p {
+    font-style: italic;
+    padding: 10px 8px 15px 8px;
+}
+
+.element-atom p {
+    margin: 0;
+    text-align: left;
+}
+
+.element-atom p:first-of-type {
+    padding-bottom: 8px;
+}
+
+.contenu-element-atom {
+    padding: 12px;
+}
+
+/* =========== Images =========== */
+
+#images-article {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#images-article .container-image {
+    background-color: silver;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 0 15px 15px 0;
+    border-radius: 7px;
+}
+
+#images-article .container-image figure {
+    height: 232px;
+    padding: 10px;
+}
+
+#images-article .container-image figure img {
+    border: solid 2px white;
+}
+
+#images-article .container-image figure figcaption {
+    border-bottom: 1px solid white;
+    color: black;
+    background-color: white;
+    display: block;
+    font-family: helsinkiregular, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-variant: small-caps;
+    padding-bottom: 3px;
+}
+
+#images-article .container-image .infos {
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+#images-article figure img,
+#images-flickr img {
+    height: 200px;
+    transition: transform 0.5s ease;
+}
+
+#images-flickr {
+    margin-top: 20px;
+}
+
+#images-flickr img:hover {
+    transform: scale(1.15);
+}
+
+.options-image {
+    font-size: small;
+}
+
+.options-image:hover {
+    text-decoration: underline;
+}
+
+/* =========== Formulaires =========== */
+
+label {
+    display: block;
+    width: 100px;
+    color: gray;
+    font-family: komika_textregular, sans-serif;
+    margin: 10px 0 3px 0;
+}
+
+#mceu_13, #mceu_44 {
+    margin-bottom: 18px;
+}
+
+.fields {
+    background-color: white;
+    border: solid 2px silver;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fields:focus {
+    background-color: #F2F2F2;
+}
+
+#formulaireArticle .fields:nth-of-type(2) {
+    margin-bottom: 15px;
+}
+
+.btnForm {
+    font-family: helsinkiregular, sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: #C10037;
+    border-radius: 5px;
+}
+
+.btnForm:hover {
+    background-color: black;
+}
+
+.erreurs {
+    color: #C10037;
+    display: inline;
+    margin-left: 15px;
+    font-family: komika_textregular, serif;
+}
+
+form#login {
+    padding: 10px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+form#login input {
+    margin: 2px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+form#login input[type='text'],
+form#login input[type='password'] {
+    width: 120px;
+}
+
+form#login input[type='text']:focus,
+form#login input[type='password']:focus {
+    background-color: #F2F2F2;
+}
+
+form#login input[type='submit'] {
+    font-family: helsinkiregular, sans-serif;
+    font-size: small;
+}
+
+#go {
+    display: inline;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+#go:hover {
+    background-color: silver;
+    text-shadow: 0 0 1px black;
+}
+
+#imageFlickr {
+    margin-bottom: 5px;
+}
+
+/* ============================== */
+/* ========== Footer =========== */
+/* ============================ */
+
+footer p {
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-top: solid 5px #C10037;
+}
+
+/* ============================== */
+/* ======== Responsive ========= */
+/* ============================ */
+
+@media screen and (max-width: 1023px) {
+
+    #main {
+        padding: 15px;
+    }
+
+    header h1 {
+        text-align: left;
+        padding-left: 35px;
+    }
+
+    header h1 sup {
+        display: none;
+    }
+
+    nav ul li a {
+        margin: 0;
+        font-size: 14px;
+        border-radius: 3px 3px 0 0;
+    }
+
+    #image-accueil {
+        padding: 30px;
+    }
+
+    #image-accueil img {
+        height: 270px;
+    }
+
+    .contenu-syndication img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    #main {
+        padding: 15px 5px 5px 5px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    div#accueil,
+    div#boxMembre,
+    form#login {
+        position: static;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 5px;
+        border-radius: 0;
+    }
+
+    div#accueil {
+        height: 20px;
+    }
+
+    div#accueil p {
+        line-height: 0;
+    }
+
+    form#login input[type="text"],
+    form#login input[type="password"] {
+        width: 70%;
+    }
+
+    form#login input[type="submit"] {
+        width: 50%;
+    }
+
+    nav ul li a {
+        position: static;
+        display: block;
+        text-align: center;
+        border-bottom: dotted 1px gray;
+        border-radius: 0;
+    }
+
+    .item {
+        background-color: #c10037;
+        border-left: 0;
+    }
+
+    .item h3 {
+        text-align: center;
+        color: white;
+        padding: 5px;
+    }
+
+    .options {
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 5px;
+    }
+
+    .more {
+        background-color: black;
+    }
+
+    #image-accueil {
+        padding: 20px;
+    }
+
+    #image-accueil img {
+        height: 200px;
+    }
+
+    .titresStyles {
+        font-size: 20px;
+    }
+
+    .erreurs {
+        display: block;
+        margin-left: 0;
+    }
+
+    #formulaireArticle .fields:nth-of-type(2) {
+        margin-bottom: 0;
+    }
+
+    .syndication {
+        margin: 0;
+    }
+
+    .syndication h3 {
+        border-radius: 0;
+    }
+
+    .syndication p {
+        text-align: left;
+    }
+
+    .contenu-syndication {
+        flex-direction: column;
+    }
+
+    .contenu-syndication a {
+        width: 100%;
+    }
+
+    #container-evenements {
+        justify-content: center;
+    }
+}
